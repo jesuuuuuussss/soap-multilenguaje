@@ -42,3 +42,13 @@ Ejecutar el siguiente comando en la terminal:
 * **Punto 1 (SOAP):** http://localhost:8000/clisoap1?n=10
 * **Punto 2 (Traducción):** http://localhost:8000/clisoap2?n=10
 * **Punto 3 (Nativo):** http://localhost:8000/conintl?n=10
+
+## 4. .NET 10
+
+### Ejecución
+1. Entrar a la carpeta: `cd SoapApiNet10`
+2. Ejecutar: `dotnet run`
+
+* **EndPoint 1:** `http://localhost:5000/clisoap1?n=10`
+* **EndPoint 2:** `http://localhost:5000/clisoap2?n=10`
+* **EndPoint 1:** `http://localhost:5000/conintl?n=10`
