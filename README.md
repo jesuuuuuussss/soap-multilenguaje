@@ -74,3 +74,14 @@ Implementación desarrollada con **Spring Boot**.
 * **EndPoint 1:** `http://localhost:8080/clisoap1?n=10`
 * **EndPoint 2:** `http://localhost:8080/clisoap2?n=10`
 * **EndPoint 3:** `http://localhost:8080/conintl?n=10`
+
+## 7. C++
+
+### Ejecución
+1. Entrar a la carpeta: `cd CppSoapApi`
+2. Compilar: `g++ main.cpp -o soap_api.exe -lws2_32`
+3. Ejecutar: `soap_api.exe`
+
+* **EndPoint 1:** `http://localhost:8080/clisoap1?n=10`
+* **EndPoint 2:** `http://localhost:8080/clisoap2?n=10`
+* **EndPoint 3:** `http://localhost:8080/conintl?n=10`
