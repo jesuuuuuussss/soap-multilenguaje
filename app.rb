@@ -14,7 +14,7 @@ get '/clisoap1' do
   # Inicializar cliente SOAP
  cliente = Savon.client(
     wsdl: 'http://www.dataaccess.com/webservicesserver/NumberConversion.wso?WSDL',
-    adapter: :httpclient, # Usamos el nuevo motor de red
+    adapter: :httpclient,
     open_timeout: 60,
     read_timeout: 60,
     ssl_verify_mode: :none
@@ -34,7 +34,7 @@ get '/clisoap2' do
   
   cliente = Savon.client(
     wsdl: 'http://www.dataaccess.com/webservicesserver/NumberConversion.wso?WSDL',
-    adapter: :httpclient, # Usamos el nuevo motor de red
+    adapter: :httpclient,
     open_timeout: 60,
     read_timeout: 60,
     ssl_verify_mode: :none

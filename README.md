@@ -13,3 +13,18 @@ Ejecutar el siguiente comando en la terminal:
 * **Punto 1 (SOAP):** http://localhost:8000/clisoap1?n=10
 * **Punto 2 (Traducción):** http://localhost:8000/clisoap2?n=10
 * **Punto 3 (Nativo):** http://localhost:8000/conintl?n=10
+
+
+## 2. Perl
+
+### Requisitos
+* Perl instalado (Strawberry Perl recomendado en Windows).
+* Instalar dependencias ejecutando: `cpanm Mojolicious SOAP::Lite Lingua::ES::Numeros`
+
+### Ejecución
+Ejecutar el siguiente comando en la terminal para levantar el servidor web de desarrollo:
+`morbo app.pl -l "http://*:8000"`
+
+* **Punto 1 (SOAP):** http://localhost:8000/clisoap1?n=10
+* **Punto 2 (Traducción):** http://localhost:8000/clisoap2?n=10
+* **Punto 3 (Nativo):** http://localhost:8000/conintl?n=10
