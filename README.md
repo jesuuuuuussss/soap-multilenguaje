@@ -52,3 +52,25 @@ Ejecutar el siguiente comando en la terminal:
 * **EndPoint 1:** `http://localhost:5000/clisoap1?n=10`
 * **EndPoint 2:** `http://localhost:5000/clisoap2?n=10`
 * **EndPoint 1:** `http://localhost:5000/conintl?n=10`
+
+## 5. Golang
+
+### Ejecución
+1. Entrar a la carpeta: `cd GoSoapApi`
+2. Ejecutar: `go run main.go`
+
+* **EndPoint 1:** `http://localhost:8000/clisoap1?n=10`
+* **EndPoint 2:** `http://localhost:8000/clisoap2?n=10`
+* **EndPoint 3:** `http://localhost:8000/conintl?n=10`
+
+## 6. Java
+
+Implementación desarrollada con **Spring Boot**.
+
+### Ejecución
+1. Entrar a la carpeta: `cd JavaSoapApi`
+2. Ejecutar: `mvn spring-boot:run`
+
+* **EndPoint 1:** `http://localhost:8080/clisoap1?n=10`
+* **EndPoint 2:** `http://localhost:8080/clisoap2?n=10`
+* **EndPoint 3:** `http://localhost:8080/conintl?n=10`
