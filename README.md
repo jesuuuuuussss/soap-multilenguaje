@@ -28,3 +28,17 @@ Ejecutar el siguiente comando en la terminal para levantar el servidor web de de
 * **Punto 1 (SOAP):** http://localhost:8000/clisoap1?n=10
 * **Punto 2 (Traducción):** http://localhost:8000/clisoap2?n=10
 * **Punto 3 (Nativo):** http://localhost:8000/conintl?n=10
+
+## 3. Node.js
+
+### Requisitos
+* Node.js instalado.
+* Ejecutar `npm install` para descargar las dependencias.
+
+### Ejecución
+Ejecutar el siguiente comando en la terminal:
+`node app.js`
+
+* **Punto 1 (SOAP):** http://localhost:8000/clisoap1?n=10
+* **Punto 2 (Traducción):** http://localhost:8000/clisoap2?n=10
+* **Punto 3 (Nativo):** http://localhost:8000/conintl?n=10
