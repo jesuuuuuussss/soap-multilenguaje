@@ -20,10 +20,8 @@ get '/clisoap1' do
     ssl_verify_mode: :none
   )
   
-  # Llamar al método NumberToWords
   respuesta = cliente.call(:number_to_words, message: { 'ubiNum' => numero })
   
-  # Extraer el resultado
   respuesta.body[:number_to_words_response][:number_to_words_result]
 end
 
@@ -42,7 +40,6 @@ get '/clisoap2' do
   respuesta = cliente.call(:number_to_words, message: { 'ubiNum' => numero })
   texto_ingles = respuesta.body[:number_to_words_response][:number_to_words_result]
   
-  # Configurar el traductor (origen: en, destino: es)
   traductor = GoogleTranslateDiff::LinearTranslator.new('en', 'es')
   resultado_espanol = traductor.translate(texto_ingles)
   
@@ -53,10 +50,8 @@ end
 # http://localhost:8000/conintl?n=10
 get '/conintl' do
   numero = params['n'].to_i || 10
-  
-  # Configurar la librería al idioma español
+
   I18n.locale = :es
   
-  # Convertir usando el método que la librería inyecta a los números enteros
   numero.to_words
 end

@@ -35,7 +35,6 @@ app.get('/clisoap2', (req, res) => {
             const textoIngles = result.NumberToWordsResult.trim();
             
             try {
-                // Traducir usando fetch nativo hacia la API gratuita de Google
                 const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=es&dt=t&q=${encodeURI(textoIngles)}`;
                 const response = await fetch(url);
                 const json = await response.json();
@@ -54,7 +53,6 @@ app.get('/clisoap2', (req, res) => {
 app.get('/conintl', (req, res) => {
     const numero = parseInt(req.query.n) || 10;
     
-    // Configurar la librería en español
     const resultado = writtenNumber(numero, { lang: 'es' });
     
     res.send(resultado);
