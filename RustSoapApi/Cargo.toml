@@ -1,0 +1,11 @@
+[package]
+name = "RustSoapApi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1.0", features = ["full"] }
+reqwest = { version = "0.12", features = ["json"] }
+regex = "1.10"
+serde = { version = "1.0", features = ["derive"] }
